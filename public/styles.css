@@ -1,0 +1,43 @@
+#titleDiv {
+  text-align: left;
+  background-color: darkGrey;
+  padding: 5em;
+  background-color: #42A3B8;
+  color: white;
+}
+
+#titleDiv h1 {
+  font-size: 52px;
+}
+
+#titleDiv h2 {
+  font-size: 20px;
+}
+
+#listTitle {
+  margin-bottom: -1.5em;
+  margin: none;
+  text-align: center;
+}
+
+#listDiv {
+  margin: 5em;
+  border: 2px solid black;
+  padding: 2em;
+}
+
+#blogDiv {
+  padding-left: 5em;
+}
+
+#editFormDiv {
+  padding: 5em;
+}
+
+#newFormDiv {
+  padding: 5em;
+}
+
+#formID {
+  width: 4em;
+}

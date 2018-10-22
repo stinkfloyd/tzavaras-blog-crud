@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="" id="titleDiv">
+    <div id="titleRow" class="row">
+      <h1 id="title">Welcome to My Blog</h1>
+      <h2>About Technology and Fun Stuff</h2>
+    </div>
+    <div class="row" id="buttonRow">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary" id="newButton">Create a Post</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3">
+    <h1 id="listTitle">Blog Titles</h1>
+    <div class="btn-group-vertical" role="group" aria-label="Basic example" id="listDiv">
+      <!-- Append titles of blogs here. -->
+    </div>
+  </div>
+
+  <div class="col-sm-9" id="blogDiv">
+  </div>
+
+  <div class="col-sm-9" id="editFormDiv" hidden>
+    <form id="editForm">
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="number" name="id" class="form-control" id="formID" readonly>
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control" id="editFormTitle">
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea name="content" class="form-control" id="editFormContent" rows="3"></textarea>
+      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="col-sm-9" id="newFormDiv" hidden>
+    <form id="newForm">
+      <h1>Add a Blog</h1>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control" id="newFormTitle">
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea name="content" class="form-control" id="newFormContent" rows="3"></textarea>
+      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
